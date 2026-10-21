@@ -1,0 +1,12 @@
+{
+  "appId": "ng.edu.fuo.attendance.staff",
+  "appName": "ATTENDANCE Staff",
+  "webDir": "www",
+  "backgroundColor": "#06240f",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}

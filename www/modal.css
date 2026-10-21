@@ -1,0 +1,24 @@
+/* In-app alert / confirm / prompt box (see modal.js). Matches the green and gold app theme. */
+dialog.am-dialog{border:0;padding:0;background:transparent;color:#e8eefc;width:min(92vw,420px);max-width:92vw;
+  max-height:88vh;overflow:visible;margin:auto;font-family:inherit}
+dialog.am-dialog::backdrop{background:rgba(2,10,6,.72);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+.am-card{background:linear-gradient(180deg,#11261a,#0b1a12);border:1px solid #2a5a3a;border-top:3px solid #d4951a;
+  border-radius:18px;padding:20px 18px 16px;box-shadow:0 18px 50px rgba(0,0,0,.55);max-height:88vh;overflow:auto;
+  animation:am-pop .18s cubic-bezier(.32,.72,0,1)}
+.am-title{margin:0 0 6px;font-size:18px;font-weight:800;color:#f0b83a;letter-spacing:.2px}
+.am-msg{margin:0 0 12px;font-size:15px;line-height:1.45;color:#e8eefc;white-space:pre-line;overflow-wrap:anywhere}
+.am-fields{display:flex;flex-direction:column;gap:10px;margin:4px 0 6px}
+.am-field{display:flex;flex-direction:column;gap:4px;margin:0}
+.am-label{font-size:13px;font-weight:600;color:#a9c9b3}
+.am-input{width:100%;margin:0;padding:12px 12px;font-size:16px;border-radius:10px;background:#07130d;color:#e8eefc;border:1px solid #2f6a45}
+.am-input:focus{outline:2px solid #f0b83a;outline-offset:1px}
+.am-err{margin:8px 0 0;font-size:14px;font-weight:600;color:#ff8a8a}
+.am-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:14px;flex-wrap:wrap}
+.am-btn{flex:1 1 120px;min-height:46px;padding:10px 16px;border-radius:12px;border:0;font-size:16px;font-weight:700;color:#fff;cursor:pointer}
+.am-primary{background:#0a6a1c}
+.am-danger{background:#c62828}
+.am-secondary{background:#1c3326;border:1px solid #2f6a45;color:#d6e8dc}
+.am-btn:active{transform:scale(.97)}
+.am-btn:focus-visible{outline:2px solid #f0b83a;outline-offset:2px}
+@keyframes am-pop{from{opacity:0;transform:translateY(10px) scale(.97)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.am-card{animation:none}}
